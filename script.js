@@ -39,12 +39,12 @@ setInterval(contagem,1000);
 
 const quizDados=[
     {
-        pergunta:"Quantos anos eu tenho?",
-        a:"12",
-        b:"44",
-        c:"32",
-        d:"110",
-        certa:"c"
+        pergunta:"Qual das alternativas abaixo não se trata de um periférico de saída:",
+        a:"Impressora",
+        b:"Monitor",
+        c:"Projetor",
+        d:"Teclado",
+        certa:"d"
     },
     {
         pergunta:"Qual a linguagem mais usada em 2021",
@@ -63,12 +63,12 @@ const quizDados=[
         certa:"d"
     },
     {
-        pergunta:"Quantos campeonatos ganhou o Benfica?",
-        a:"38",
-        b:"35",
-        c:"40",
-        d:"37",
-        certa:"d"
+        pergunta:"Quais são as teclas de atalho para criar uma nova pasta no computador?",
+        a:"Ctrl+N",
+        b:"Ctrl+T",
+        c:"Ctrl+Shift+N",
+        d:"Ctrl+Shift+M",
+        certa:"c"
     },
     {
         pergunta:"O que significa RAM?",
@@ -77,7 +77,16 @@ const quizDados=[
         c:"Random Air Mate",
         d:"Rolling Ants Mob",
         certa:"b"
+    },
+    {
+        pergunta:"O que é o Windows da Microsoft?",
+        a:"É um navegador de internet",
+        b:"Não serve para ser instalado",
+        c:"É um sistema operacional",
+        d:"Componenete do pacote office",
+        certa:"c"
     }
+    
 ]
 
 const quiz = document.getElementById("quiz");
