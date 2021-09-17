@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="script.js" defer></script>     <!--defer para atrasar o carregamento do script, async para carregar ao mesmo tempo-->
     <title>JavaScript Apps</title>
 </head>
@@ -65,19 +66,37 @@
     <button id="enviar">Responder</button>
 </div>
 <!--seccao mobile-->
-    <div class="conteudo-mobile">
-        <header>
-            <input type="text">
-            <button id="procurar">Procurar</button>
-        </header>
-        <div class="conteudo-fav">
-            <h3>Pratos preferidos</h3>
-                                                    <!--    ul>li*3>img+span    shortcut para criar lista 3*li--> 
-            <ul>
-                <li><img src="" alt=""><span></span></li>
-                <li><img src="" alt=""><span></span></li>
-                <li><img src="" alt=""><span></span></li>
-            </ul>
+    <div class="conteudo-mobile" id="mobile">
+        <!--header do conteudo-mobile-->
+            <header>
+                <input type="text">
+                <button id="procurar"><i class="fas fa-search"></i></button>
+            </header>
+            <div class="conteudo-fav">
+                <h3>Pratos preferidos</h3>
+                                                        <!--    ul>li*3>img+span    shortcut para criar lista 3*li--> 
+                <ul class="refe-fav">
+                    <li><img src="img/bolo.jpg" alt="bolo"><span></span></li>
+                    <li><img src="img/fruta.jpg" alt="fruta"><span></span></li>
+                    <li><img src="img/paquecas.jpg" alt="panquecas"><span></span></li>
+                </ul>
+            </div>
+    
+        <div class="refeicoes">
+            <div class="aleatorio">
+                Prato aleatório
+            </div>
+            <div class="refeicao">
+                <div class="refeicao-header">
+                    <img src="img/cenouras.jpg" alt="cenoura">
+                </div>
+                <div class="refeicao-body">
+                    <h4>Bolos Semifrios</h4>
+                    <button>                 <!--i.fas.fa-heart   shortcut para botao coracao-->
+                        <i class="fa fa-heart"></i>              
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 

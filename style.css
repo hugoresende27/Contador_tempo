@@ -4,14 +4,14 @@
 *{
     box-sizing: border-box;
 }
-
+/*formatacoes body- geral*/
 body{
     
     background-image: url("img/neve.jpg") ;
     font-family: "Poppins",sans-serif;
     font-weight: 800;
     margin: 0;
-    background-size: cover;
+    background-size:cover;
     background-position: center center;
     display: flex;                  /*so com display flex o centrar conteudo funciona*/
     flex-direction: column;
@@ -20,6 +20,8 @@ body{
     min-height: 100vh;              /*responsivo*/
 
 }
+
+/*formatacoes contador*/
 .conteudo-contador{
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +66,8 @@ footer a:hover{
     text-decoration: none;     /*retira o sublinhado dos links*/   
     }
 
+/*formatacoes quiz*/
+
 .quiz-conteudo{
     background-color: grey;
     border-radius: 10px;
@@ -82,7 +86,7 @@ footer a:hover{
     padding: 0rem;
 }
 
-div#quiz ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
@@ -111,4 +115,64 @@ div#quiz button{
 
 div#quiz button:hover{
     background-color: #2512d3;
+}
+
+/*formatacoes mobile*/
+
+.conteudo-mobile{
+    background-color: rgba(49, 63, 75, 0.753);
+    width: 400px;
+    /*border-radius: 1rem;*/
+   /* padding: 1rem;*/
+  /*box-shadow: 0 0 10px 4px #665e5e1a;*/
+    box-shadow: 0 0 10px 4px black;
+}
+
+div#mobile img{
+    max-width: 100%;
+}
+
+div#mobile header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+div#mobile header input{
+    background-color: #e1e1f1;
+    border: none;
+    border-radius: 3px;
+    padding: 0.2rem 1rem;
+}
+
+div#mobile header button{
+    background-color: transparent;
+    border: none;
+    color: antiquewhite;
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+.conteudo-fav{
+    padding: 0.25rem 1rem;
+    text-align: center;
+}
+
+.refe-fav{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.refe-fav li{
+
+}
+
+.refe-fav li img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
 }
