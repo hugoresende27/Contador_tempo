@@ -7,7 +7,7 @@
 
 body{
     
-    background-image: url("neve.jpg") ;
+    background-image: url("img/neve.jpg") ;
     font-family: "Poppins",sans-serif;
     font-weight: 800;
     margin: 0;
@@ -82,21 +82,21 @@ footer a:hover{
     padding: 0rem;
 }
 
-ul {
+div#quiz ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li{
+div#quiz ul li{
     font-size: 1.1rem;
     margin: 1rem 1rem;
 }
 
-ul li label{
+div#quiz ul li label{
     cursor: pointer;
 }
 
-button{
+div#quiz button{
     background-color: #6154d3;
     display: block;
     border: none;
@@ -109,6 +109,6 @@ button{
     cursor:pointer;
 }
 
-button:hover{
+div#quiz button:hover{
     background-color: #2512d3;
 }
