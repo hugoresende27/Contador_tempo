@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,700;1,300;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: url("neve.jpg") ;
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    display: flex;                  /*so com display flex o centrar conteudo funciona*/
+    flex-direction: column;
+    align-items: center;            /*centra o conteudo horizontalmente*/
+    justify-content: center;        /*centra o conteudo */
+    min-height: 100vh;
+
+}
+.conteudo-contador{
+    display: flex;
+}
+
+h1{
+    font-weight:bold;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.texto{
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0 2rem;
+
+}
+
+.contador{
+    text-align: center;
+}
+
+.contador span{
+    font-size: 1.2rem;
+}
+
+/*estilos do footer */
+
+footer{
+    padding-top: 10px;
+    color: #11100f;
+    clear: both;
+    text-align: center;
+    border-top: 1px dashed;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;       
+}
+
+footer a{
+color: #0d0e0d;  /*cor dos links a preto*/
+text-decoration: none;     /*retira o sublinhado dos links*/   
+}
+
+footer a:hover{
+    color: #2512d3;  /*cor dos links a preto*/
+    text-decoration: none;     /*retira o sublinhado dos links*/   
+    }
+      
