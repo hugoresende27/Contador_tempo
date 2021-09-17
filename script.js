@@ -34,3 +34,114 @@ function tempo(time){
 contagem();
 
 setInterval(contagem,1000);
+
+///////////////////////////////////////////quizz app/////////////////////////////////
+
+const quizDados=[
+    {
+        pergunta:"Quantos anos eu tenho?",
+        a:"12",
+        b:"44",
+        c:"32",
+        d:"110",
+        certa:"c"
+    },
+    {
+        pergunta:"Qual a linguagem mais usada em 2021",
+        a:"Java",
+        b:"C",
+        c:"Python",
+        d:"JavaScript",
+        certa:"a"
+    },
+    {
+        pergunta:"Quem inventou o Linux?",
+        a:"Donald Trump",
+        b:"Bill Gates",
+        c:"Hugo Resende",
+        d:"Linus Torvalds",
+        certa:"c"
+    },
+    {
+        pergunta:"Quantos campeonatos ganhou o Benfica?",
+        a:"38",
+        b:"35",
+        c:"40",
+        d:"37",
+        certa:"d"
+    },
+    {
+        pergunta:"O que significa RAM?",
+        a:"Read Only Memory",
+        b:"Read Access Memory",
+        c:"Random Air Mate",
+        d:"Rolling Ants Mob",
+        certa:"b"
+    }
+]
+
+const quiz = document.getElementById("quiz");
+const answerEls = document.querySelectorAll(".resp");
+const questionEl = document.getElementById("perg");
+const a_text = document.getElementById("txtA");
+const b_text = document.getElementById("txtB");
+const c_text = document.getElementById("txtC");
+const d_text = document.getElementById("txtD");
+const submitBtn = document.getElementById("enviar");
+
+let currentQuiz = 0;
+let score = 0;
+
+loadQuiz();
+
+function loadQuiz() {
+    deselectAnswers();
+
+    const currentQuizData = quizDados[currentQuiz];
+
+    questionEl.innerText = currentQuizData.pergunta;
+    txtA.innerText = currentQuizData.a;
+    txtB.innerText = currentQuizData.b;
+    txtC.innerText = currentQuizData.c;
+    txtD.innerText = currentQuizData.d;
+}
+
+function getSelected() {
+    let answer = undefined;
+
+    answerEls.forEach((answerEl) => {
+        if (answerEl.checked) {
+            answer = answerEl.id;
+        }
+    });
+
+    return answer;
+}
+
+function deselectAnswers() {
+    answerEls.forEach((answerEl) => {
+        answerEl.checked = false;
+    });
+}
+
+submitBtn.addEventListener("click", () => {
+    // check to see the answer
+    const answer = getSelected();
+
+    if (answer) {
+        if (answer === quizDados[currentQuiz].certa) {
+            score++;
+        }
+
+        currentQuiz++;
+        if (currentQuiz < quizDados.length) {
+            loadQuiz();
+        } else {
+            quiz.innerHTML = `
+                <h2 style="text-align:center;">Respondeu corretamente a ${score}/${quizDados.length} perguntas.</h2>
+                
+                <button onclick="location.reload()">Carregar</button>
+            `;
+        }
+    }
+});

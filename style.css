@@ -17,18 +17,15 @@ body{
     flex-direction: column;
     align-items: center;            /*centra o conteudo horizontalmente*/
     justify-content: center;        /*centra o conteudo */
-    min-height: 100vh;
+    min-height: 100vh;              /*responsivo*/
 
 }
 .conteudo-contador{
     display: flex;
+    flex-wrap: wrap;
 }
 
-h1{
-    font-weight:bold;
-    font-size: 4rem;
-    margin-top: 5rem;
-}
+
 
 .texto{
     font-weight: bold;
@@ -66,4 +63,52 @@ footer a:hover{
     color: #2512d3;  /*cor dos links a preto*/
     text-decoration: none;     /*retira o sublinhado dos links*/   
     }
-      
+
+.quiz-conteudo{
+    background-color: grey;
+    border-radius: 10px;
+    width: 40rem;
+    box-shadow: 0 0 10px 4px black;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.quiz-conteudo h1{
+    text-align: center;
+}
+     
+.quiz-cabecalho{
+    padding: 0rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    font-size: 1.1rem;
+    margin: 1rem 1rem;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    background-color: #6154d3;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #2512d3;
+}

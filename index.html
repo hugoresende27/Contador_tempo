@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>     <!--defer para atrasar o carregamento do script, async para carregar ao mesmo tempo-->
-    <title>Contador</title>
+    <title>JavaScript Apps</title>
 </head>
 <body>
-    <h1>Ano novo em...</h1>
+<!--seccao contador-->
+
+    <h1>Contador</h1>
+    <h2>Ano novo em...</h2>
 
     <div class="conteudo-contador">
+        
         <div class="contador c-dias">
             <p class="texto" id="dias">0</p>
                 <span>Dias</span>
@@ -33,6 +37,33 @@
             
         </div>
     </div>
+
+<!--seccao quizz-->
+
+<div class="quiz-conteudo" id="quiz">
+    <div class="quiz-cabecalho">
+        <h1 id="perg">Questionário</h1>
+        <ul>
+            <li>
+                <input type="radio"id="a" name="resp" class="resp">
+                <label for="a" id="txtA">Pergunta</label>
+            </li>
+            <li>
+                <input type="radio"id="b" name="resp" class="resp">
+                <label for="b"id="txtB">Pergunta</label>
+            </li>
+            <li>
+                <input type="radio"id="c" name="resp" class="resp">
+                <label for="c"id="txtC">Pergunta</label>
+            </li>
+            <li>
+                <input type="radio"id="d" name="resp" class="resp">
+                <label for="d"id="txtD">Pergunta</label>
+            </li>
+        </ul>
+    </div>
+    <button id="enviar">Responder</button>
+</div>
 <!--seccao do footer-->
     <footer id="rodape">
         <p>Copyright 2021 - by Hugo Resende Products </p>
