@@ -60,7 +60,7 @@ const quizDados=[
         b:"Bill Gates",
         c:"Hugo Resende",
         d:"Linus Torvalds",
-        certa:"c"
+        certa:"d"
     },
     {
         pergunta:"Quantos campeonatos ganhou o Benfica?",
