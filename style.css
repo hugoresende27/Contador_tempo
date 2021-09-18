@@ -4,7 +4,7 @@
 *{
     box-sizing: border-box;
 }
-/*formatacoes body- geral*/
+/*formatacoes body- geral  //////////////////////////////////////////////////////////////////////////////////////*/  
 body{
     
     background-image: url("img/neve.jpg") ;
@@ -21,7 +21,7 @@ body{
 
 }
 
-/*formatacoes contador*/
+/*formatacoes contador //////////////////////////////////////////////////////////////////////////////////////*/
 .conteudo-contador{
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +66,7 @@ footer a:hover{
     text-decoration: none;     /*retira o sublinhado dos links*/   
     }
 
-/*formatacoes quiz*/
+/*formatacoes quiz /////////////////////////////////////////////////////////////////////////////////////*/
 
 .quiz-conteudo{
     background-color: grey;
@@ -117,11 +117,11 @@ div#quiz button:hover{
     background-color: #2512d3;
 }
 
-/*formatacoes mobile*/
+/*formatacoes mobile //////////////////////////////////////////////////////////////////////////////////////*/
 
 .conteudo-mobile{
     background-color: rgba(49, 63, 75, 0.753);
-    width: 400px;
+    width: 30rem;
     /*border-radius: 1rem;*/
    /* padding: 1rem;*/
   /*box-shadow: 0 0 10px 4px #665e5e1a;*/
@@ -155,24 +155,85 @@ div#mobile header button{
 }
 
 .conteudo-fav{
-    padding: 0.25rem 1rem;
+    background-color: #a3a1ac;
+    padding: 1rem;
     text-align: center;
 }
 
 .refe-fav{
     display: flex;
     padding: 0;
+   /* overflow: auto;*/
     flex-wrap: wrap;
     justify-content: center;
+    
+}
+
+
+.refe-fav li span{
+    font-size: 0.9rem;
 }
 
 .refe-fav li{
-
+    margin: 5px;
+    width: 75px;
 }
 
 .refe-fav li img{
+    border: 2px solid white;
     border-radius: 50%;
+    box-shadow: 0 0 4px 2px black;
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+}
+
+.pop-up{
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px black;
+    margin: 1.5rem;
+    overflow: hidden;
+}
+
+.refeicao-header{
+    position: relative;
+}
+
+.aleatorio  {
+    position: absolute;
+    top: 1rem;
+    background-color: rgb(209, 186, 186);
+    padding: .25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.refeicao-header img{
+    object-fit: cover;
+    height: 240;
+    width: 100%;
+
+}
+
+.refeicao-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.refeicao-body h4{
+    margin: 0;
+}
+
+.refeicao-body .btn-fav{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.refeicao-body .btn-fav.active{
+    color: #2512d3;
 }
