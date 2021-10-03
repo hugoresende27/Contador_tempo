@@ -76,6 +76,7 @@ footer a:hover{
     margin: 1rem;
     padding: 1rem;
     max-width: 100%;
+    margin-top: 100px;
 }
 
 .quiz-conteudo h1{
@@ -126,10 +127,18 @@ div#quiz button:hover{
    /* padding: 1rem;*/
   /*box-shadow: 0 0 10px 4px #665e5e1a;*/
     box-shadow: 0 0 10px 4px black;
+    margin-top: 100px;
 }
 
 div#mobile img{
     max-width: 100%;
+
+}
+
+.refeicao img{
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 40px;
 }
 
 div#mobile header{
@@ -144,6 +153,9 @@ div#mobile header input{
     border: none;
     border-radius: 3px;
     padding: 0.2rem 1rem;
+    font-family: inherit;
+    color:#11100f;
+    font-weight: bolder;
 }
 
 div#mobile header button{
@@ -156,7 +168,7 @@ div#mobile header button{
 
 .conteudo-fav{
     background-color: #a3a1ac;
-    padding: 1rem;
+    padding:0.25rem 1rem;
     text-align: center;
 }
 
@@ -226,7 +238,7 @@ div#mobile header button{
     margin: 0;
 }
 
-.refeicao-body .btn-fav{
+.refeicao-body .fav-btn{
     border: none;
     background-color: transparent;
     font-size: 1.2rem;
@@ -234,6 +246,6 @@ div#mobile header button{
     cursor: pointer;
 }
 
-.refeicao-body .btn-fav.active{
-    color: #2512d3;
+.refeicao-body .fav-btn.active{
+    color: #d80580;
 }
